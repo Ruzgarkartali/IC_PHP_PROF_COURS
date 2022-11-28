@@ -209,13 +209,13 @@ class ProfCoursTest extends TestCase
         
         // Cours
         
-        $record_prof_a = Cours::printAll($conn);
+        $record_cours_a = Cours::printAll($conn);
         print "########## - LISTE DES Cours - AVANT TOUT ########## \n";
-        foreach ( $record_prof_a as $record_prof ) {
-            print $record_prof;
+        foreach ( $record_cours_a as $record_cours ) {
+            print $record_cours;
         }
         print "################################################################\n\n";
-        $this->assertCount(count(Self::$prof_a), $record_prof_a, "Nombre d'enregistrement égale pour Cours\n");
+        $this->assertCount(count(Self::$cours_a), count($record_cours_a), "Nombre d'enregistrement égale pour Cours\n");
 
   
         

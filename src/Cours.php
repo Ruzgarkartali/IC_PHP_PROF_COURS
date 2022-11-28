@@ -88,7 +88,7 @@ class Cours {
             $cours_a[] = new Cours($row["intitule"], $row["duree"], $row["idprof"]);
         }
         $stmt->closeCursor();
-        return count($cours_a);
+        return $cours_a;
     }
 
     /**
