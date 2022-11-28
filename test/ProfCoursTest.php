@@ -192,6 +192,7 @@ class ProfCoursTest extends TestCase
      * REQUIRE: Assurez vous qu'aucune suppression n'a été faite.
      * @order 2
      */
+    /*
     public function testPrintAll()
     {
         print __METHOD__."\n";
@@ -215,11 +216,11 @@ class ProfCoursTest extends TestCase
             print $record_cours;
         }
         print "################################################################\n\n";
-        $this->assertCount(count(Self::$cours_a), sizeof($record_cours_a), "Nombre d'enregistrement égale pour Cours\n");
+        $this->assertCount(count(Self::$prof_a), $record_prof_a, "Nombre d'enregistrement égale pour Prof\n");
 
   
         
-    }
+    }*/
     
     
     /**
